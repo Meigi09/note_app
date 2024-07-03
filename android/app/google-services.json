@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "299251458125",
+    "project_id": "notes-db180",
+    "storage_bucket": "notes-db180.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299251458125:android:cc3b4d2a89e0e9d11b3c04",
+        "android_client_info": {
+          "package_name": "com.inyandiko.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2bQuJrhlXKA1K_9tfIKvfNFqohweoRy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
