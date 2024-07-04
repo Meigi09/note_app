@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:299251458125:android:cc3b4d2a89e0e9d11b3c04",
+        "mobilesdk_app_id": "1:299251458125:android:b202a2dcd5ccc8b81b3c04",
         "android_client_info": {
-          "package_name": "com.inyandiko.app"
+          "package_name": "com.example.note_app"
         }
       },
       "oauth_client": [],

@@ -17,6 +17,7 @@ class NoteApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Notes App',
     debugShowCheckedModeBanner: false,
     home: HomePage(),
     );

@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -65,4 +56,34 @@ class DefaultFirebaseOptions {
     storageBucket: 'notes-db180.appspot.com',
     iosBundleId: 'com.example.noteApp',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCgy3mnIots618idS8iQDcMxu6S1zqBraI',
+    appId: '1:299251458125:web:4a703df8d04375f31b3c04',
+    messagingSenderId: '299251458125',
+    projectId: 'notes-db180',
+    authDomain: 'notes-db180.firebaseapp.com',
+    storageBucket: 'notes-db180.appspot.com',
+    measurementId: 'G-G11DW2RMM1',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyCcyfAMeGzByOfOs9cpAguhC9OdnFlYj24',
+    appId: '1:299251458125:ios:cfcfeb3222782cc01b3c04',
+    messagingSenderId: '299251458125',
+    projectId: 'notes-db180',
+    storageBucket: 'notes-db180.appspot.com',
+    iosBundleId: 'com.example.noteApp',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyCgy3mnIots618idS8iQDcMxu6S1zqBraI',
+    appId: '1:299251458125:web:f6307eddf08a8a601b3c04',
+    messagingSenderId: '299251458125',
+    projectId: 'notes-db180',
+    authDomain: 'notes-db180.firebaseapp.com',
+    storageBucket: 'notes-db180.appspot.com',
+    measurementId: 'G-WRTL3KNMJV',
+  );
+
 }
